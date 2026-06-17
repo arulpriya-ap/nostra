@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Using Tailwind CSS CDN-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"/>
+<!--Font Awsome Icon-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!--Nav Bar-->
+    <nav class="flex justify-between p-5 items-center">
+      <a href="./index.html"><h1 class="text-4xl font-bold">Nostra</h1></a>
+      <div class="flex items-center gap-5">
+      <div class="hidden md:flex gap-10">
+        <a href="./index.html" class="hover:underline">Home</a>
+        <a  href="./index.html#newarrivalsection" class="hover:underline">New Arrival</a>
+        <a  href="./index.html#mostwantedsection" class="hover:underline">Most wanted</a>
+        <a href="./collections.html" class="hover:underline">Collections</a>
+        <a href="./contact.html" class="hover:underline">Contact Us</a>
+      </div>
+        <!--Menu bar-->
+      <button id="menubar">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8 md:hidden">
+  <path fill-rule="evenodd" d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
+</svg>
+
+      </button>
+      </div>
+    </nav>
+
+    <!--Side Nav Bar-->
+<section id="sidenavbar" style="background-color: #1D232C; width: 50%; height: 100vh; left: -50%;" class="fixed top-0 z-20 transition-all duration-1000">
+  <div>
+    <i id="closeicon" class="fa-solid fa-xmark text-2xl text-white p-5 inline cursor-pointer"></i>
+  </div>
+  <div class="flex flex-col justify-center  space-y-5 px-5">
+        <a href="./index.html" class="hover:underline text-white text-2xl">Home</a>
+        <a  href="./index.html#newarrivalsection" class="hover:underline text-white text-2xl">New Arrival</a>
+        <a  href="./index.html#mostwantedsection" class="hover:underline text-white text-2xl">Most wanted</a>
+        <a href="./collections.html" class="hover:underline text-white text-2xl">Collections</a>
+        <a href="./contact.html" class="hover:underline text-white text-2xl">Contact Us</a>
+      </div>
+</section>
+
+    <!--Contact Section-->
+    <section class="p-5">
+      <div style="background-color: #1D232C;" class="py-10 flex flex-col items-center justify-center">
+        
+          <div>
+            <h1 class="text-white text-3xl font-bold">Contact Us</h1>
+          </div>
+
+
+          <div class="w-full flex justify-center">
+            <form class="mt-5 w-full max-w-xs sm:max-w-xl">
+              <div class="flex flex-col">
+                <label class="text-white font-bold pt-5">Name:</label>
+                <input class="w-full p-3 rounded-md" type="text" placeholder="Name">
+              </div>
+              <div class="flex flex-col">
+                <label class="text-white font-bold pt-5">Email:</label>
+                <input class="w-full p-3 rounded-md" type="text" placeholder="Email-Id">
+              </div>
+              <div class="flex flex-col">
+                <label class="text-white font-bold pt-5">Message:</label>
+                <textarea class="w-full p-3 rounded-md" placeholder="Message">
+                  </textarea>
+              </div>
+              <button class="bg-blue-600 py-2 px-4 rounded-md mt-5 text-white">Submit</button>
+            </form>
+          </div>
+        
+      </div>
+    </section>
+
+   
+    <!--News Ltter-->
+    <section class="p-5">
+      <div class="text-center">
+        <h1 class="text-3xl md:text-4xl font-bold">Join Our News Letter</h1>
+        <p class="text-xl md:text-2xl lg:text-3xl pt-5">Signup for our email newspaper to get exclusive discounts, updates, and more</p>
+        <div class="flex flex-col justify-center items-center">
+        <input type="text" placeholder="Enter your Email-Id" class="border border-black w-3/5 sm:w-1/2 p-2 mt-5 outline-none shadow-lg rounded-md">
+         <button class="flex items-center gap-1 p-2 mt-5 text-white py-2 px-4 rounded-lg text-xl" style="background-color: #1D232C;">Subscribe
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="w-5 h-5"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M12.97 3.97a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06l6.22-6.22H3a.75.75 0 0 1 0-1.5h16.19l-6.22-6.22a.75.75 0 0 1 0-1.06Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!--Footer-->
+    <section class="p-5" style="background-color: #1D232C;">
+      <div>
+        <h1 class="text-white pt-5 font-bold text-4xl">Nostra</h1>
+        <p class="text-white pt-5 font-bold text-xl md:text-2xl">The Standard chunk of Lorem ipsum used since the 1500s is reprodused below for those interest</p>
+        <div class="flex gap-5 pt-5">
+          <div>
+            <i class="fa-brands fa-instagram text-white text-3xl"></i>
+          </div>
+          <div>
+            <i class="fa-brands fa-facebook text-white text-3xl"></i>
+          </div>
+          <div>
+           <i class="fa-brands fa-x-twitter text-white text-3xl"></i>
+          </div>
+        </div>
+        <p class="text-white pt-5">@ 2026 Nostra.com by Arulpriya</p>
+      </div>
+    </section>
+    <script src="./contact.js">
+
+    </script>
+</body>
+</html>
+
+
+

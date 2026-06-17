@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!--Using Tailwind CSS CDN-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!--Font Awsome Icon-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!--Card-->
+    <section id="offercard" class="bg-black h-12 flex justify-center items-center gap-5">
+      <h1 class="text-white md:text-xl">
+        Signed Up and <span class="font-bold">GET 20% OFF</span> for your first
+        order
+      </h1>
+      <svg
+        id="cardcloseicon"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="w-7 h-7 text-white gap-5 cursor-pointer"
+        style="stroke-width: 3px"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M6 18 18 6M6 6l12 12"
+        />
+      </svg>
+    </section>
+
+    <!--Nav Bar-->
+    <nav class="flex justify-between p-5 items-center">
+      <a href="./index.html"><h1 class="text-4xl font-bold">Nostra</h1></a>
+      <div class="flex items-center gap-5">
+        <div class="hidden md:flex gap-10">
+          <a href="./index.html" class="hover:underline">Home</a>
+          <a  href="./index.html#newarrivalsection" class="hover:underline">New Arrival</a>
+          <a  href="./index.html#mostwantedsection" class="hover:underline">Most wanted</a>
+          <a href="./collections.html" class="hover:underline">Collections</a>
+          <a href="./contact.html" class="hover:underline">Contact Us</a>
+        </div>
+        <!--Menu bar-->
+        <button id="menubar">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="w-8 h-8 md:hidden"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    <!--Side Nav Bar-->
+<section id="sidenavbar" style="background-color: #1D232C; width: 50%; height: 100vh; left: -50%;" class="fixed top-0 z-20 transition-all duration-1000">
+  <div>
+    <i id="closeicon" class="fa-solid fa-xmark text-2xl text-white p-5 inline cursor-pointer"></i>
+  </div>
+  <div class="flex flex-col justify-center  space-y-5 px-5">
+        <a href="./index.html" class="hover:underline text-white text-2xl">Home</a>
+        <a  href="./index.html#newarrivalsection" class="hover:underline text-white text-2xl">New Arrival</a>
+        <a  href="./index.html#mostwantedsection" class="hover:underline text-white text-2xl">Most wanted</a>
+        <a href="./collections.html" class="hover:underline text-white text-2xl">Collections</a>
+        <a href="./contact.html" class="hover:underline text-white text-2xl">Contact Us</a>
+      </div>
+</section>
+
+    <!--Collection Page-->
+    <section class="p-5">
+      <div class="flex flex-row gap-6">
+        <!--filter div-->
+        <div>
+          <div>
+            <h1 class="text-3xl mb-5 font-semibold text-gray-600 underline">
+              Occation
+            </h1>
+            <input type="checkbox" name="occation" value="summer" /><span
+              class="text-xl"
+>
+              Summer</span
+            ><br /><br />
+            <input type="checkbox" name="occation" value="party" /><span
+              class="text-xl"
+            >
+              Party</span
+            ><br /><br />
+            <input type="checkbox" name="occation" value="beach" />
+            <span class="text-xl"> Beach</span><br /><br />
+          </div>
+
+          <div>
+            <h1 class="text-3xl mb-5 font-semibold text-gray-600 underline">
+              Colors
+            </h1>
+            <input type="checkbox" name="colors" value="red" /><span
+              class="text-xl"
+            >
+              Red</span
+            ><br /><br />
+            <input type="checkbox" name="colors" value="blue" /><span
+              class="text-xl"
+            >
+              Blue</span
+            ><br /><br />
+            <input type="checkbox" name="colors" value="green" />
+            <span class="text-xl"> Green</span><br /><br />
+          </div>
+
+          <div>
+            <h1 class="text-3xl mb-5 font-semibold text-gray-600 underline">
+              Arrivals
+            </h1>
+            <input type="checkbox" name="arrivals" value="new" /><span
+              class="text-xl"
+            >
+              New</span
+            ><br /><br />
+            <input type="checkbox" name="arrivals" value="old" /><span
+              class="text-xl"
+            >
+              Old</span
+            ><br /><br />
+          </div>
+        </div>
+        <!--Empty div-->
+        <div class="bg-gray-600 w-1 self-stretch"></div>
+        <!--collections-->
+        <div class="flex-1">
+             <div >
+                <input id="searchbox" type="text" placeholder="Search Here" class="w-full p-2 border border-black outline-none rounded-lg shadow-md">
+             </div>
+
+         <div id="collectioncontainer" class="w-full grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-10">
+            <div class="Product" data-occation="summer" data-color="red" data-arrival="new">
+                <img src="./Images/newarrival1.jpg" class="w-full object-cover">
+                <h1 class="text-xl font-bold text-center pt-2">Floral Summer Shirt 1</h1>
+                <p class="text-xl text-center pt-2">₹220</p>
+            </div>
+            <div class="Product" data-occation="party" data-color="green" data-arrival="old">
+                <img src="./Images/collection2.jpg" class="w-full object-cover">
+                <h1 class="text-xl font-bold text-center pt-2">Summer Green 2</h1>
+                <p class="text-xl text-center pt-2">₹260</p>
+            </div>
+            <div class="Product" data-occation="beach" data-color="red" data-arrival="new">
+                <img src="./Images/collection3.jpg" class="w-full object-cover">
+                <h1 class="text-xl font-bold text-center pt-2">Party Floral Shirt 3</h1>
+                <p class="text-xl text-center pt-2">₹320</p>
+            </div>
+            <div class="Product" data-occation="summer" data-color="blue" data-arrival="old">
+                <img src="./Images/collection4.jpg" class="w-full object-cover">
+                <h1 class="text-xl font-bold text-center pt-2">Floral Summer Shirt 4</h1>
+                <p class="text-xl text-center pt-2">₹500</p>
+            </div>
+            <div class="Product" data-occation="party" data-color="blue" data-arrival="new">
+                <img src="./Images/collection5.jpg" class="w-full object-cover">
+                <h1 class="text-xl font-bold text-center pt-2">Beach Shirt 5</h1>
+                <p class="text-xl text-center pt-2">₹220</p>
+            </div>
+            <div class="Product" data-occation="beach" data-color="blue" data-arrival="new" >
+                <img src="./Images/collection6.jpg" class="w-full object-cover">
+                <h1 class="text-xl font-bold text-center pt-2">PShirt Party Red 6</h1>
+                <p class="text-xl text-center pt-2">₹220</p>
+            </div>
+            <div class="Product" data-occation="party" data-color="green" data-arrival="new">
+                <img src="./Images/collection7.jpg" class="w-full object-cover">
+                <h1 class="text-xl font-bold text-center pt-2">Party Floral Shirt 7</h1>
+                <p class="text-xl text-center pt-2">₹240</p>
+            </div>
+            <div class="Product" data-occation="summer" data-color="red" data-arrival="old">
+                <img src="./Images/newarrival3.jpg" class="w-full object-cover">
+                <h1 class="text-xl font-bold text-center pt-2">FShirt Party Red 8</h1>
+                <p class="text-xl text-center pt-2">₹280</p>
+            </div>
+            <div class="Product" data-occation="beach" data-color="green" data-arrival="new">
+                <img src="./Images/newarrival4.jpg" class="w-full object-cover">
+                <h1 class="text-xl font-bold text-center pt-2">Floral Summer Shirt 9</h1>
+                <p class="text-xl text-center pt-2">₹920</p>
+            </div>
+         </div>
+        </div>
+      </div>
+    </section>
+
+    <!--News Ltter-->
+    <section class="p-5">
+      <div class="text-center">
+        <h1 class="text-3xl md:text-4xl font-bold">Join Our News Letter</h1>
+        <p class="text-xl md:text-2xl lg:text-3xl pt-5">Signup for our email newspaper to get exclusive discounts, updates, and more</p>
+        <div class="flex flex-col justify-center items-center">
+        <input type="text" placeholder="Enter your Email-Id" class="border border-black w-3/5 sm:w-1/2 p-2 mt-5 outline-none shadow-lg rounded-md">
+         <button class="flex items-center gap-1 p-2 mt-5 text-white py-2 px-4 rounded-lg text-xl" style="background-color: #1D232C;">Subscribe
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="w-5 h-5"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M12.97 3.97a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06l6.22-6.22H3a.75.75 0 0 1 0-1.5h16.19l-6.22-6.22a.75.75 0 0 1 0-1.06Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!--Footer-->
+    <section class="p-5" style="background-color: #1D232C;">
+      <div>
+        <h1 class="text-white pt-5 font-bold text-4xl">Nostra</h1>
+        <p class="text-white pt-5 font-bold text-xl md:text-2xl">The Standard chunk of Lorem ipsum used since the 1500s is reprodused below for those interest</p>
+        <div class="flex gap-5 pt-5">
+          <div>
+            <i class="fa-brands fa-instagram text-white text-3xl"></i>
+          </div>
+          <div>
+            <i class="fa-brands fa-facebook text-white text-3xl"></i>
+          </div>
+          <div>
+           <i class="fa-brands fa-x-twitter text-white text-3xl"></i>
+          </div>
+        </div>
+        <p class="text-white pt-5">@ 2026 Nostra.com by Arulpriya</p>
+      </div>
+    </section>
+    <script src="./collection.js"></script>
+  </body>
+</html>
